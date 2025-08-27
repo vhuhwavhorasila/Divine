@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Divine Dining</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        /* Menu Section */
+        .menu {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .menu h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .menu h1::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #e74c3c;
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+        
+        .menu-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .menu-item p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body
+    <!-- Header with Horizontal Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h1>Our Exquisite Menu</h1>
+        
+        <div class="menu-grid">
+            <!-- Starter Section -->
+            <div class="menu-item">
+                <img src="../Assets/Starters Main-Menu.jpg" alt="Starters">
+                <div class="menu-item-content">
+                    <h3>Starters</h3>
+                    <p>Begin your culinary journey with our exquisite selection of appetizers and small plates.</p>
+                </div>
+            </div>
+            
+            <!-- Burgers Section -->
+            <div class="menu-item">
+                <img src="../Assets/Burger-Menu.jpg" alt="Burgers">
+                <div class="menu-item-content">
+                    <h3>Gourmet Burgers</h3>
+                    <p>Juicy, flavorful burgers made with premium ingredients and served with our signature sauces.</p>
+                </div>
+            </div>
+            
+            <!-- Baskets Section -->
+            <div class="menu-item">
+                <img src="../Assets/BasketMain-Menu.jpg" alt="Baskets">
+                <div class="menu-item-content">
+                    <h3>Shareable Baskets</h3>
+                    <p>Perfect for groups, our baskets are filled with delicious finger foods and dipping sauces.</p>
+                </div>
+            </div>
+            
+            <!-- Chicken Section -->
+            <div class="menu-item">
+                <img src="../Assets/Chicken Main-Menu.jpg" alt="Chicken Dishes">
+                <div class="menu-item-content">
+                    <h3>Chicken Specialties</h3>
+                    <p>From crispy fried to perfectly grilled, our chicken dishes satisfy every craving.</p>
+                </div>
+            </div>
+            
+            <!-- Nachos Section -->
+            <div class="menu-item">
+                <img src="../Assets/Nachos.jpg" alt="Nachos">
+                <div class="menu-item-content">
+                    <h3>Loaded Nachos</h3>
+                    <p>Crispy tortilla chips topped with melted cheese, fresh toppings, and your choice of protein.</p>
+                </div>
+            </div>
+            
+            <!-- Pasta Section -->
+            <div class="menu-item">
+                <img src="../Assets/Pasta Main-Menu.jpg" alt="Pasta">
+                <div class="menu-item-content">
+                    <h3>Pasta Selection</h3>
+                    <p>Handcrafted pasta dishes with rich sauces and fresh ingredients.</p>
+                </div>
+            </div>
+            
+            <!-- Pizza Section -->
+            <div class="menu-item">
+                <img src="../Assets/Pizza menu.jpg" alt="Pizza">
+                <div class="menu-item-content">
+                    <h3>Artisan Pizzas</h3>
+                    <p>Wood-fired pizzas with hand-tossed dough and premium toppings.</p>
+                </div>
+            </div>
+            
+            <!-- Salads Section -->
+            <div class="menu-item">
+                <img src="../Assets/Salads Menu.jpg" alt="Salads">
+                <div class="menu-item-content">
+                    <h3>Fresh Salads</h3>
+                    <p>Light and refreshing salads made with seasonal produce and house-made dressings.</p>
+                </div>
+            </div>
+            
+            <!-- Desserts Section -->
+            <div class="menu-item">
+                <img src="../Assets/desert.jpg" alt="Desserts">
+                <div class="menu-item-content">
+                    <h3>Decadent Desserts</h3>
+                    <p>Sweet endings to your meal with our selection of cakes, pastries, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Divine Dining. All rights reserved.</p>
+    </footer>
+</body>
+</html>
